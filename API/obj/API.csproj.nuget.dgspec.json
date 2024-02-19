@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/delta/Escritorio/TestCA/API/API.csproj": {}
+    "/home/delta/Documentos/TestCA/API/API.csproj": {}
   },
   "projects": {
-    "/home/delta/Escritorio/TestCA/API/API.csproj": {
+    "/home/delta/Documentos/TestCA/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/delta/Escritorio/TestCA/API/API.csproj",
+        "projectUniqueName": "/home/delta/Documentos/TestCA/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/home/delta/Escritorio/TestCA/API/API.csproj",
+        "projectPath": "/home/delta/Documentos/TestCA/API/API.csproj",
         "packagesPath": "/home/delta/.nuget/packages/",
-        "outputPath": "/home/delta/Escritorio/TestCA/API/obj/",
+        "outputPath": "/home/delta/Documentos/TestCA/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/delta/.nuget/NuGet/NuGet.Config"
@@ -25,7 +25,14 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/delta/Documentos/TestCA/Application/Application.csproj": {
+                "projectPath": "/home/delta/Documentos/TestCA/Application/Application.csproj"
+              },
+              "/home/delta/Documentos/TestCA/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/home/delta/Documentos/TestCA/Infrastructure/Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -62,6 +69,188 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.116/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/delta/Documentos/TestCA/Application/Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/delta/Documentos/TestCA/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/home/delta/Documentos/TestCA/Application/Application.csproj",
+        "packagesPath": "/home/delta/.nuget/packages/",
+        "outputPath": "/home/delta/Documentos/TestCA/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/delta/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/delta/Documentos/TestCA/Domain/Domain.csproj": {
+                "projectPath": "/home/delta/Documentos/TestCA/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.116/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/delta/Documentos/TestCA/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/delta/Documentos/TestCA/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/home/delta/Documentos/TestCA/Domain/Domain.csproj",
+        "packagesPath": "/home/delta/.nuget/packages/",
+        "outputPath": "/home/delta/Documentos/TestCA/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/delta/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.116/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/delta/Documentos/TestCA/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/delta/Documentos/TestCA/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/home/delta/Documentos/TestCA/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/home/delta/.nuget/packages/",
+        "outputPath": "/home/delta/Documentos/TestCA/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/delta/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/delta/Documentos/TestCA/Application/Application.csproj": {
+                "projectPath": "/home/delta/Documentos/TestCA/Application/Application.csproj"
+              },
+              "/home/delta/Documentos/TestCA/Domain/Domain.csproj": {
+                "projectPath": "/home/delta/Documentos/TestCA/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
